@@ -3,6 +3,15 @@
 body a,p,h1,h2,h3,h4 {
     font-family: Arial, sans-serif;
     font-size: small;
+    color: #222;
+}
+html a {
+    color:#000;
+    opacity: 0.75;
+    text-decoration: none;
+}
+html a:hover{
+    text-decoration: underline;
 }
 html, body {
     height : 100%;
@@ -17,3 +26,56 @@ ul,li {
 }
 
 /* Main Styling */
+.container {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.topNav , .bottomNav, .searchForm{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+
+}
+.topNav {
+    line-height: 40px;
+}
+.topNav a {
+    padding-left: 15px;
+}
+.topNav-right {
+    padding: 0 15px;
+}
+.bottomNav a {
+    padding-left: 25px;
+    font-size: 14px;
+}
+.bottomNav {
+    background: #f2f2f2;
+    padding-right:40px;
+    border-top: 1px solid #e4e4e4;
+}
+.mainContent {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchForm {
+    align-items: center;
+    padding: 5px 15px ;
+    width:484px;
+    border: 1px solid #e4e4e4;
+    border-radius: 40px;
+}
+
+.search-icon {
+    height:20px;
+    width: 20px;
+}
+.mic-icon {
+    background: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    height:24px;
+    width:24px;
+    background-size: 24px;
+}
